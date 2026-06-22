@@ -1,0 +1,6 @@
+# arcpy is NOT installable via pip — it ships with ArcGIS Pro (arcgispro-py3).
+# These packages are typically already present in that environment; pinning is
+# optional. Versions below are minimums known to work.
+pandas>=1.3
+pyarrow>=6.0
+PyYAML>=5.4

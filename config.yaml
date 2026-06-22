@@ -1,0 +1,40 @@
+# ---------------------------------------------------------------------------
+# Configuration for the three-pass OD cost matrix pipeline.
+#
+# Copy this file to `config.yaml` and edit the values for your environment:
+#     cp config.example.yaml config.yaml
+#
+# Alternatively, point the OD_CONFIG environment variable at any config path:
+#     set OD_CONFIG=C:\path\to\my_config.yaml      (Windows)
+#     export OD_CONFIG=/path/to/my_config.yaml     (macOS/Linux)
+#
+# `config.yaml` is git-ignored so your local paths never get committed.
+# ---------------------------------------------------------------------------
+
+# NAICS code of the destination POI layer to process.
+# The destination feature class is resolved as: <src_gdb>/poi_advan_<naics_code>
+naics_code: "621511"
+
+# File geodatabase holding the origins (origins_bg) and POI feature classes.
+src_gdb: "GDB_PATH"
+
+# Path to the routing network dataset (e.g., Esri StreetMap Premium).
+# This is licensed data and is NOT included in the repository.
+network_dataset: "ROUTING_ND_PATH
+
+# Network Analyst travel mode to use for passes 1 and 2.
+travel_mode_name: "Driving Time"
+
+# Network locating search tolerance, in meters.
+search_tolerance: 7000
+
+# Number of origins solved per chunk.
+chunk_size: 1000
+
+# Number of parallel worker processes (tune to your CPU and memory).
+max_workers: 14
+
+# Per-origin destination search buffers for each pass.
+buffer_dist_pass1: "300 Miles"
+buffer_dist_pass2: "500 Miles"
+buffer_dist_pass3: "1000 Miles"
