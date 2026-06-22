@@ -100,7 +100,7 @@ Origins that still have no reachable destination after Pass 3 are written to `un
 
 If you use this code, please cite:
 
-> [Will be updated.]
+> Kim, K., DeJohn, A., and Kan, W. (2026). Adaptive OD Cost Matrix (version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20789862
 
 ## License
 
