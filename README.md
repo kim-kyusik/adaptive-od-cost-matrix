@@ -1,4 +1,4 @@
-# Three-Pass OD Cost Matrix
+# Adaptive OD Cost Matrix
 
 Network travel-time and distance computation from origin block groups to NAICS-coded points of interest (POIs), using ArcGIS Network Analyst (`arcpy.nax`) with an adaptive three-pass buffering strategy.
 
