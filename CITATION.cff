@@ -11,6 +11,7 @@ authors:
 
 - family-names: Kan
   given-names: Weining
+  orcid: https://orcid.org/0009-0006-0083-7064
 
 title:kim-kyusik/adaptive-od-cost-matrix:  Adaptive OD Cost Matrix v1.0.0
 version: v1.0.0
